@@ -32,6 +32,7 @@ jobs:
   plan:
     name: plan
     runs-on: ubuntu-latest
+    needs: main
     steps:
       - run: |
           terraform plan
