@@ -29,3 +29,10 @@ jobs:
       - name: Init Terraform configuration
         run: |
           terraform init
+  plan:
+    name: plan
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          terraform plan
+    
